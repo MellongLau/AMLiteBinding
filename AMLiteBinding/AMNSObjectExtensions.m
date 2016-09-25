@@ -38,6 +38,6 @@
 
 @implementation NSObject (AM)
 
-ADD_PROPERTY_RUNTIME(liteBinding, AMLiteBinding)
+AM_ADD_PROPERTY_RUNTIME(liteBinding, AMLiteBinding)
 
 @end

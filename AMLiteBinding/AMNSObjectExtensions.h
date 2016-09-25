@@ -14,10 +14,10 @@
 swizzledSelector:NSSelectorFromString(@"am_"#methodName) \
 isClassMethod:classMethod];
 
-#define DECLARE_PROPERTY_RUNTIME(name, type)  \
+#define AM_DECLARE_PROPERTY_RUNTIME(name, type)  \
 @property (nonatomic, strong) type *am_##name;
 
-#define ADD_PROPERTY_RUNTIME(name, type)  \
+#define AM_ADD_PROPERTY_RUNTIME(name, type)  \
 static const void * kAM_##name;\
 @dynamic am_##name;\
 - (type *)am_##name\
@@ -42,6 +42,6 @@ objc_setAssociatedObject(self, &kAM_##name, name, OBJC_ASSOCIATION_RETAIN_NONATO
 
 @interface NSObject (AM)
 
-DECLARE_PROPERTY_RUNTIME(liteBinding, AMLiteBinding)
+AM_DECLARE_PROPERTY_RUNTIME(liteBinding, AMLiteBinding)
 
 @end

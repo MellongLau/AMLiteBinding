@@ -12,15 +12,15 @@
 
 @implementation UIView (AM)
 
-ADD_PROPERTY_RUNTIME(argList, NSArray)
-ADD_PROPERTY_RUNTIME(itemFormat, NSString)
-ADD_PROPERTY_RUNTIME(keyPath, NSString)
+AM_ADD_PROPERTY_RUNTIME(argList, NSArray)
+AM_ADD_PROPERTY_RUNTIME(itemFormat, NSString)
+AM_ADD_PROPERTY_RUNTIME(keyPath, NSString)
 
 @end
 
 @implementation UIView (BM)
 
-ADD_PROPERTY_RUNTIME(defaultText_v, NSString)
+AM_ADD_PROPERTY_RUNTIME(defaultText_v, NSString)
 
 + (void)load {
     static dispatch_once_t once_token;

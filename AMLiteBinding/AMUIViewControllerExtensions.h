@@ -11,6 +11,6 @@
 
 @interface UIViewController (AM)
 
-DECLARE_PROPERTY_RUNTIME(defaultText_vc, NSString)
+AM_DECLARE_PROPERTY_RUNTIME(defaultText_vc, NSString)
 
 @end

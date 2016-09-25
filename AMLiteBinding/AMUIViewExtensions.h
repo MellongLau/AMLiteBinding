@@ -11,12 +11,12 @@
 
 @interface UIView (AM)
 
-DECLARE_PROPERTY_RUNTIME(argList, NSArray)
-DECLARE_PROPERTY_RUNTIME(itemFormat, NSString)
-DECLARE_PROPERTY_RUNTIME(keyPath, NSString)
+AM_DECLARE_PROPERTY_RUNTIME(argList, NSArray)
+AM_DECLARE_PROPERTY_RUNTIME(itemFormat, NSString)
+AM_DECLARE_PROPERTY_RUNTIME(keyPath, NSString)
 
 @end
 
 @interface UIView (BM)
-DECLARE_PROPERTY_RUNTIME(defaultText_v, NSString)
+AM_DECLARE_PROPERTY_RUNTIME(defaultText_v, NSString)
 @end

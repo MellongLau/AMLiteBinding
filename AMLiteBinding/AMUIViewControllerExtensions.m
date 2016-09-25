@@ -12,7 +12,7 @@
 
 @implementation UIViewController (AM)
 
-ADD_PROPERTY_RUNTIME(defaultText_vc, NSString)
+AM_ADD_PROPERTY_RUNTIME(defaultText_vc, NSString)
 
 + (void)load {
     static dispatch_once_t once_token;
